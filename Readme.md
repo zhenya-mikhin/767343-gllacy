@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Евгений Михин](https://up.htmlacademy.ru/htmlcss/23/user/767343).
-* Наставник: [Дмитрий Варганов].(https://htmlacademy.ru/profile/scorn_da)
+* Наставник: [Дмитрий Варганов*].(https://htmlacademy.ru/profile/scorn_da)
 
 ---
 
