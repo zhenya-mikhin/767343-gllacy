@@ -12,13 +12,43 @@
 						<img src="img/logo.svg" height="154" width="64" alt="Лого">
 					</a>
 					<ul class="site-navigation">
-						<li><a href="catalog.html">Каталог</a></li>
+						<li>
+							<a href="catalog.html">Каталог</a>
+							<ul>
+								<li><a href="#">Новинки</a></li>
+								<li><a href="catalog.html">Сливочное</a></li>
+								<li><a href="#">Щербеты</a></li>
+								<li><a href="#">Фруктовый лед</a></li>
+								<li><a href="#">Мелорин</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Доставка и оплата</a></li>
 						<li><a href="#">О компании</a></li>
 					</ul>
 					<ul class="user-navigation">
-						<li><span>Поиск</span></li>
-						<li><a href="#">Вход</a></li>
+						<li>
+							<a href="#">Поиск</a>
+							<form action="#" method="get">
+								<label for="search"><p class="visually-hidden">Поиск</p></label>
+								<input type="search" id="search" name="search" placeholder="Что ищем?">
+							</form>
+						</li>
+						<li>
+							<a href="#">Вход</a>
+							<form>
+								<label for="email"><p class="visually-hidden">Эл.почта</p></label>
+								<p class="form-row">
+									<input type="email" id="email" name="email" placeholder="Электронная почта">
+								</p>
+								<label for="password"><p class="visually-hidden">Пароль</p></label>
+								<p class="form-row">
+									<input type="text" id="password" name="password" placeholder="Пароль">
+								</p>
+								<a class="button"" href="#"></a>>Войти</a>
+								<a href="#">Забыли пароль?</a>
+								<a href="#">Новая регистрация</a>
+							</form>
+						</li>
 						<li><a href="#">Пусто</a></li>
 					</ul>
 				</nav>
@@ -137,7 +167,11 @@
     					<p>
     						Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
     					</p>
-    					<!--Форма-->
+    					<form action="#" method="get">
+    						<label for="email"><p class="visually-hidden">Эл.почта</p></label>
+								<input type="email" id="email" name="email" placeholder="Электронная почта">
+							<button class="button">Отправить</button>
+    					</form>
     				</section>
     			</section>
     		</div>
@@ -173,10 +207,14 @@
 					<span class="visually-hidden">Закрыть</span>
 				</button>
 				<p class="form-row">
-					<input type="text" name="name" placeholder="Как вас зовут?">
-					<input type="email" name="email" placeholder="Ваша почта для ответа?">
-					<textarea placeholder="Напишите что-нибудь..."></textarea>
+					<label for="name"><p class="visually-hidden">Ваше имя</p></label>
+					<input type="text" id="name" name="name" placeholder="Как вас зовут?">
 				</p>
+				<p class="form-row">
+					<label for="email-modal"><p class="visually-hidden">Ваша почта</p></label>
+					<input type="email" id="email-modal" name="email" placeholder="Ваша почта для ответа?">
+				</p>
+				<textarea placeholder="Напишите что-нибудь..."></textarea>
 				<button>Отправить</button>
 			</form>
 		</section>
