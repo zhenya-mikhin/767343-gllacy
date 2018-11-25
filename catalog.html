@@ -12,14 +12,68 @@
 						<img src="img/logo.svg" height="154" width="64" alt="Лого">
 					</a>
 					<ul class="site-navigation">
-						<li><a class="site-navigation-current">Каталог</a></li>
+						<li>
+							<a class="site-navigation-current">Каталог</a>
+							<ul>
+								<li><a href="#">Новинки</a></li>
+								<li><a>Сливочное</a></li>
+								<li><a href="#">Щербеты</a></li>
+								<li><a href="#">Фруктовый лед</a></li>
+								<li><a href="#">Мелорин</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Доставка и оплата</a></li>
 						<li><a href="#">О компании</a></li>
 					</ul>
 					<ul class="user-navigation">
-						<li><span>Поиск</span></li>
-						<li><a href="#">Вход</a></li>
-						<li><a href="#">2 товара</a></li>
+						<li class="user-navigation-item search">
+							<a href="#">Поиск</a>
+							<form action="#" method="get">
+								<label for="search"><p class="visually-hidden">Поиск</p></label>
+								<input type="search" id="search" name="search" placeholder="Что ищем?">
+							</form>
+						</li>
+						<li class="user-navigation-item enter">
+							<a href="#">Вход</a>
+							<form action="#" method="get">
+								<label for="email"><p class="visually-hidden">Эл.почта</p></label>
+								<p class="form-row">
+									<input type="email" id="email" name="email" placeholder="Электронная почта">
+								</p>
+								<label for="password"><p class="visually-hidden">Пароль</p></label>
+								<p class="form-row">
+									<input type="text" id="password" name="password" placeholder="Пароль">
+								</p>
+								<a class="button"" href="#"></a>>Войти</a>
+								<a href="#">Забыли пароль?</a>
+								<a href="#">Новая регистрация</a>
+							</form>
+						</li>
+						<li class="user-navigation-item basket">
+							<a href="#">2 товара</a>
+							<ul class="basket-modal">
+								<li>
+									<button class="modal-close">
+										<span class="visually-hidden">Закрыть</span>
+									</button>
+									<img src="img/little-ice-cream1.jpg" width="33" height="33" alt="Апельсиновый пломбир">
+									<p>Пломбир с апельсиновым джемом</p>
+									<b>1,5 <small>кг х</small> <p class="price-basket">200 руб.</p></b>
+									<p>300 руб.</p>
+								</li>
+								<li>
+									<button class="modal-close">
+										<span class="visually-hidden">Закрыть</span>
+									</button>
+									<img src="img/little-ice-cream2.jpg" width="33" height="33" alt="Апельсиновый пломбир">
+									<p>Клубничный пломбир с присыпкой из белого шоколада</p>
+									<b>1,5 <small>кг х</small> <p class="price-basket">300 руб.</p></b>
+									<p>450 руб.</p>
+								</li>
+								<li><p>Итого: 750 руб.</p></li>
+								<li><a class="button" href="#">Оформить заказ</a></li>
+							</ul>
+						</li>
 					</ul>
 				</nav>
 				<p>
@@ -238,5 +292,21 @@
 				</div>
 			</div>
 		</footer>
+		<section class="modal modal-feedback">
+			<form action="#" method="post">
+				<h3>Мы обязательно вам ответим!</h3>
+				<button class="modal-close">
+					<span class="visually-hidden">Закрыть</span>
+				</button>
+				<p class="form-row">
+					<input type="text" name="name" placeholder="Как вас зовут?">
+				</p>
+				<p class="form-row">
+					<input type="email" name="email" placeholder="Ваша почта для ответа?">
+				</p>
+				<textarea placeholder="Напишите что-нибудь..."></textarea>
+				<button>Отправить</button>
+			</form>
+		</section>
 	</body>
 </html>
