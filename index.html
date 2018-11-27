@@ -29,22 +29,22 @@
 						<li>
 							<a href="#">Поиск</a>
 							<form action="#" method="get">
-								<label for="search"><p class="visually-hidden">Поиск</p></label>
+								<label class="search-label" for="search">Поиск</label>
 								<input type="search" id="search" name="search" placeholder="Что ищем?">
 							</form>
 						</li>
 						<li>
 							<a href="#">Вход</a>
-							<form>
-								<label for="email"><p class="visually-hidden">Эл.почта</p></label>
+							<form action="#" method="post">
+								<label class="email-label" for="email">Эл.почта</label>
 								<p class="form-row">
 									<input type="email" id="email" name="email" placeholder="Электронная почта">
 								</p>
-								<label for="password"><p class="visually-hidden">Пароль</p></label>
+								<label class="password-label" for="password">Пароль</label>
 								<p class="form-row">
 									<input type="text" id="password" name="password" placeholder="Пароль">
 								</p>
-								<a class="button"" href="#"></a>>Войти</a>
+								<button class="button">Войти</button>
 								<a href="#">Забыли пароль?</a>
 								<a href="#">Новая регистрация</a>
 							</form>
@@ -167,7 +167,7 @@
     					<p>
     						Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
     					</p>
-    					<form action="#" method="get">
+    					<form action="#" method="post">
     						<label for="email"><p class="visually-hidden">Эл.почта</p></label>
 								<input type="email" id="email" name="email" placeholder="Электронная почта">
 							<button class="button">Отправить</button>
