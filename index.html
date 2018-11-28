@@ -26,30 +26,32 @@
 						<li><a href="#">О компании</a></li>
 					</ul>
 					<ul class="user-navigation">
-						<li>
+						<li class="user-navigation-item search">
 							<a href="#">Поиск</a>
 							<form action="#" method="get">
-								<label class="search-label" for="search">Поиск</label>
-								<input type="search" id="search" name="search" placeholder="Что ищем?">
+								<p class="form-row">
+									<label class="search-label" for="search">Что ищем?</label>
+									<input type="search" id="search" name="search" placeholder=" ">
+								</p>
 							</form>
 						</li>
-						<li>
+						<li class="user-navigation-item enter">
 							<a href="#">Вход</a>
 							<form action="#" method="post">
-								<label class="email-label" for="email">Эл.почта</label>
 								<p class="form-row">
-									<input type="email" id="email" name="email" placeholder="Электронная почта">
+									<label class="email-label" for="email">Электронная почта</label>
+									<input type="email" id="email" name="email" placeholder=" ">
 								</p>
-								<label class="password-label" for="password">Пароль</label>
 								<p class="form-row">
-									<input type="text" id="password" name="password" placeholder="Пароль">
+									<label class="password-label" for="password">Пароль</label>
+									<input type="text" id="password" name="password" placeholder=" ">
 								</p>
 								<button class="button">Войти</button>
 								<a href="#">Забыли пароль?</a>
 								<a href="#">Новая регистрация</a>
 							</form>
 						</li>
-						<li><a href="#">Пусто</a></li>
+						<li class="user-navigation-item basket"><a href="#">Пусто</a></li>
 					</ul>
 				</nav>
 				<p>
@@ -159,17 +161,17 @@
     				<section class="blog">
     					<h2 class="visually-hidden">Блог</h2>
     					<h3 class="blog-news">Новое в нашем блоге</h3>
-    					<p>
-    						<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-    					</p>
+    					<p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
     				</section>
     				<section class="subscription">
     					<p>
     						Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
     					</p>
     					<form action="#" method="post">
-    						<label for="email"><p class="visually-hidden">Эл.почта</p></label>
-								<input type="email" id="email" name="email" placeholder="Электронная почта">
+    						<p class="form-row">
+    							<label for="email">Электронная почта</label>
+								<input type="email" id="email" name="email" placeholder=" ">
+							</p>
 							<button class="button">Отправить</button>
     					</form>
     				</section>
@@ -207,12 +209,12 @@
 					<span class="visually-hidden">Закрыть</span>
 				</button>
 				<p class="form-row">
-					<label for="name"><p class="visually-hidden">Ваше имя</p></label>
-					<input type="text" id="name" name="name" placeholder="Как вас зовут?">
+					<label class="name-label" for="name">Как вас зовут?</label>
+					<input type="text" id="name" name="name" placeholder=" ">
 				</p>
 				<p class="form-row">
-					<label for="email-modal"><p class="visually-hidden">Ваша почта</p></label>
-					<input type="email" id="email-modal" name="email" placeholder="Ваша почта для ответа?">
+					<label class="email-label" for="email-modal">Ваша почта для ответа?</label>
+					<input type="email" id="email-modal" name="email" placeholder=" ">
 				</p>
 				<textarea placeholder="Напишите что-нибудь..."></textarea>
 				<button>Отправить</button>
