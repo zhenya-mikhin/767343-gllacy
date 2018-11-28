@@ -29,20 +29,22 @@
 						<li class="user-navigation-item search">
 							<a href="#">Поиск</a>
 							<form action="#" method="get">
-								<label class="search-label" for="search">Поиск</label>
-								<input type="search" id="search" name="search" placeholder="Что ищем?">
+								<p class="form-row">
+									<label class="search-label" for="search">Что ищем?</label>
+									<input type="search" id="search" name="search" placeholder=" ">
+								</p>
 							</form>
 						</li>
 						<li class="user-navigation-item enter">
 							<a href="#">Вход</a>
 							<form action="#" method="post">
-								<label class="email-label" for="email">Эл.почта</label>
 								<p class="form-row">
-									<input type="email" id="email" name="email" placeholder="Электронная почта">
+									<label class="email-label" for="email">Электронная почта</label>
+									<input type="email" id="email" name="email" placeholder=" ">
 								</p>
-								<label class="password-label" for="password">Пароль</label>
 								<p class="form-row">
-									<input type="text" id="password" name="password" placeholder="Пароль">
+									<label class="password-label" for="password">Пароль</label>
+									<input type="text" id="password" name="password" placeholder=" ">
 								</p>
 								<button class="button">Войти</button>
 								<a href="#">Забыли пароль?</a>
@@ -301,10 +303,12 @@
 					<span class="visually-hidden">Закрыть</span>
 				</button>
 				<p class="form-row">
-					<input type="text" name="name" placeholder="Как вас зовут?">
+					<label class="name-label" for="name">Как вас зовут?</label>
+					<input type="text" id="name" name="name" placeholder=" ">
 				</p>
 				<p class="form-row">
-					<input type="email" name="email" placeholder="Ваша почта для ответа?">
+					<label class="email-label" for="email-modal">Ваша почта для ответа?</label>
+					<input type="email" id="email-modal" name="email" placeholder=" ">
 				</p>
 				<textarea placeholder="Напишите что-нибудь..."></textarea>
 				<button>Отправить</button>
