@@ -3,6 +3,9 @@
  	<head>
     	<meta charset="utf-8">
     	<title>HTML Academy: Глейси</title>
+    	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
   	</head>
   	<body>
 		<header class="main-header">
@@ -14,7 +17,7 @@
 					<ul class="site-navigation">
 						<li>
 							<a href="catalog.html">Каталог</a>
-							<ul>
+							<ul class="catalog-navigation">
 								<li><a href="#">Новинки</a></li>
 								<li><a href="catalog.html">Сливочное</a></li>
 								<li><a href="#">Щербеты</a></li>
@@ -44,8 +47,7 @@
 								</p>
 								<p class="form-row">
 									<label class="password-label" for="password">Пароль</label>
-									<input type="text" id="password" name="password" placeholder=" ">
-								</p>
+									<input type="password" id="password" name="password" placeholder=" ">
 								<button class="button">Войти</button>
 								<a href="#">Забыли пароль?</a>
 								<a href="#">Новая регистрация</a>
@@ -180,11 +182,11 @@
     	</main>
 		<footer class="main-footer">
 			<div class="container">
-				<ul class="social-button">
-					<li><a href="#">Твитер</a></li>
-					<li><a href="#">Инстаграм</a></li>
-					<li><a href="#">Фейсбук</a></li>
-					<li><a href="#">Вконтакте</a></li>
+				<ul class="social-list">
+					<li><a class="social-button" href="#">Твитер</a></li>
+					<li><a class="social-button" href="#">Инстаграм</a></li>
+					<li><a class="social-button" href="#">Фейсбук</a></li>
+					<li><a class="social-button" href="#">Вконтакте</a></li>
 				</ul>
 				<div class="documentation">
 					<ul class="documentation-list">
