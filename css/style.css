@@ -1,0 +1,297 @@
+/* Стилизация */
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #849d8f;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.site-navigation,
+.user-navigation,
+.catalog-navigation,
+.catalod-list,
+.features-list,
+.social-list,
+.documentation-list,
+.breadcrumbs {
+  list-style: none;
+}
+
+.site-navigation {
+	font-size: 14px;
+  	line-height: 18px;
+  	font-weight: bold;
+  	color: #ffffff;  
+}
+.user-navigation {
+
+	font-size: 14px;
+  	line-height: 16px;
+  	font-weight: bold;
+  	color: #ffffff;
+}
+.search a {
+	font-size: 0;
+}
+.search::before {
+	content: "";
+	background: #fdfdfd url(../img/loupe.svg) no-repeat;
+
+	width: 17px;
+	height: 17px;
+}
+.button {
+	font-size: 18px;
+  	line-height: 24px;
+  	font-weight: bold;
+  	color: #ffffff;
+	text-align: center; 
+
+  	background-color: #ef6240;
+}
+.breadcrumbs {
+	font-size: 14px;
+  	line-height: 16px;
+  	font-weight: 400;
+  	color: #ffffff;
+}
+.stock {
+	font-size: 18px;
+  	line-height: 22px;
+  	font-weight: bold;
+  	color: #ffffff;
+	text-align: center;/* Временно */
+}
+.stock h3 {
+	font-size: 35px;
+  	line-height: 41px;
+  	font-weight: bold;
+  	color: #ffffff;
+}
+.stock-jam {
+	width: 560px;
+	height: 230px;
+	background: #772b3b url(../img/raspberries-background.jpg) no-repeat;
+}
+.stock-topping {
+	width: 560px;
+	height: 230px;
+	background: #772b3b url(../img/chocolade-background.jpg) no-repeat;
+}
+.catalog {
+	font-size: 16px;
+  	line-height: 22px;
+  	font-weight: bold;
+  	color: #ffffff;
+  	text-align: center;
+}
+.catalog b {
+	font-size: 45px;
+  	line-height: 45px;
+  	font-weight: bold;
+  	color: #ffffff;
+}
+.catalog small {
+	font-size: 30px;
+  	line-height: 45px;
+  	font-weight: bold;
+  	color: #ffffff;
+}
+.features b {
+	font-size: 24px;
+  	line-height: 30px;
+  	font-weight: medium;
+  	color: #323232;
+}
+.features {
+	width: 1146px;
+	height: 307px;
+
+	font-size: 16px;
+  	line-height: 22px;
+  	font-weight: regular;
+  	color: #323232;
+
+  	background: #e4d8bd url(../img/wafer-pattern.jpg) repeat;
+}
+.blog {
+	width: 560px;
+	height: 220px;
+
+	background: #ffffff url(../img/strawberry-background.jpg) no-repeat;
+}
+.blog h3 {
+	font-size: 16px;
+  	line-height: 22px;
+  	font-weight: medium;
+  	color: #323232;
+}
+.blog a {
+	font-size: 24px;
+  	line-height: 30px;
+  	font-weight: bold;
+  	color: #323232;
+
+  	text-decoration: underline;
+}
+.subscription {
+	width: 560px;
+	height: 220px;
+
+	background: #ffffff url(../img/subscription-background.jpg) no-repeat;
+}
+.main-map {
+	width: 1200px;
+	height: 430px;
+	
+	background: #e9e3cb url(../img/map.jpg) no-repeat;
+}
+.call-feedback {
+	width: 303px;
+	height: 306px;
+
+	font-size: 14px;
+  	line-height: 20px;
+  	font-weight: 400;
+  	color: #323232;
+
+	background-color: #fcfcfc;
+}
+.call-feedback p:nth-of-type(2n) {
+	font-size: 18px;
+  	line-height: 24px;
+  	font-weight: bold;
+  	color: #323232;
+}
+.main-footer {
+	font-size: 12px;
+  	line-height: 18px;
+  	font-weight: 400;
+  	color: #ffffff;
+}
+.social-button {
+	width: 32px;
+	height: 32px;
+	margin-right: 15px;
+}
+.social-button a {
+	font-size: 0;
+}
+.twitter {
+	background: #e6ebe9 url(../img/twitter.svg) no-repeat;
+}
+.instagram {
+	background: #e6ebe9 url(../img/instagram.svg) no-repeat;
+}
+.facebook {
+	background: #e6ebe9 url(../img/facebook.svg) no-repeat;
+}
+.VK {
+	background: #e6ebe9 url(../img/vk.svg) no-repeat;
+}
+
+
+/* На время, мне так проще сетки строить */
+
+.visually-hidden {
+	display: none;
+}
+.site-navigation a {
+	text-decoration: underline;
+}
+.site-navigation ul {
+	display: none;
+}
+.search form {
+	display: none;
+}
+.enter form {
+	display: none;
+}
+.user-navigation-item a:first-child {
+	text-decoration: none;
+}
+.modal {
+	display: none;
+}
+.basket-modal {
+	display: none;
+}
+
+
+
+
+/* Сетки */
+.container {
+	width: 1145px;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+.main-navigation {
+	display: flex;
+	justify-content: space-between;
+}
+.main-nav-logo {
+	width: 154px;
+	height: 64px;
+	margin-left:  30px; 
+}
+.site-navigation {
+	display: flex;
+	width: 385px;
+	height: 20px;
+	justify-content: space-between;
+	align-items: flex-end; 
+
+	padding: 10px;
+	margin: 20px 20px; 
+}
+.user-navigation {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	margin: 0;
+	padding: 10px;
+	
+	width: 265px;
+	height: 35px;
+}
+.breadcrumbs {
+	display: flex;
+}
+.stock {
+	display: flex;
+	justify-content: space-between;
+}
+.catalog ul {
+	display: flex;
+	justify-content: space-between;
+}
+.blocks {
+	display: flex;
+}
+.main-footer .container {
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 20px;
+}
+.social-list {
+	display: flex;
+	justify-content: flex-start;
+
+	width: 267px;
+}
