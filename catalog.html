@@ -12,7 +12,7 @@
 			<div class="container">
 				<nav class="main-navigation">
 					<a href="index.html" class="main-nav-logo">
-						<img src="img/logo.svg" height="154" width="64" alt="Лого">
+						<img src="img/logo.svg" height="64" width="154" alt="Лого">
 					</a>
 					<ul class="site-navigation">
 						<li>
@@ -100,7 +100,43 @@
 				<h2>Сливочное мороженое</h2>
 				<section class="filters">
 					<h2 class="visually-hidden">Фильтры товаров</h2>
-					<!--Форма фильтров-->
+					<form class="filters-form" action="#" method="post">
+						<fieldset class="form-item">
+							<legend>Сортировка:</legend>
+							<select name="sort">
+								<option value="popular">по популярности</option>
+							</select>
+						</fieldset>
+						<fieldset class="form-item">
+							<legend>Цена: 100 руб. – 500 руб.</legend>
+							<input type="range" name="range" min="100" max="500">
+						</fieldset>
+						<fieldset class="form-item">
+							<legend>Жирность:</legend>
+							<input type="radio" name="fat" value="0" id="0">
+							<label for="0">0%</label>
+							<input type="radio" name="fat" value="10" id="10" checked>
+							<label for="10">10%</label>
+							<input type="radio" name="fat" value="30" id="30">
+							<label for="30">до 30%</label>
+							<input type="radio" name="fat" value="<30" id="<30">
+							<label for="<30">выше 30%</label>
+						</fieldset>
+						<fieldset class="form-item">
+							<legend>Наполнители:</legend>
+							<input type="checkbox" name="chocolate" id="chocolate">
+							<label for="chocolate">шоколадные</label>
+							<input type="checkbox" name="sugar" id="sugar">
+							<label for="sugar">сахарные присыпки</label>
+							<input type="checkbox" name="fruit" id="fruit">
+							<label for="fruit">фрукты</label>
+							<input type="checkbox" name="syrup" id="syrup">
+							<label for="syrup">сиропы</label>
+							<input type="checkbox" name="jam" id="jam">
+							<label for="jam">джемы</label>
+							<button class="button form-button">Применить</button>
+						</fieldset>
+					</form>
 				</section>
 				<section class="catalog">
 					<ul class="catalod-list">
