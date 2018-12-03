@@ -102,17 +102,17 @@
 					<h2 class="visually-hidden">Фильтры товаров</h2>
 					<form class="filters-form" action="#" method="post">
 						<fieldset class="form-item">
-							<legend>Сортировка:</legend>
+							<legend class="legend">Сортировка:</legend>
 							<select name="sort">
 								<option value="popular">по популярности</option>
 							</select>
 						</fieldset>
 						<fieldset class="form-item">
-							<legend>Цена: 100 руб. – 500 руб.</legend>
+							<legend class="legend">Цена: 100 руб. – 500 руб.</legend>
 							<input type="range" name="range" min="100" max="500">
 						</fieldset>
 						<fieldset class="form-item">
-							<legend>Жирность:</legend>
+							<legend class="legend">Жирность:</legend>
 							<input type="radio" name="fat" value="0" id="0">
 							<label for="0">0%</label>
 							<input type="radio" name="fat" value="10" id="10" checked>
@@ -123,7 +123,7 @@
 							<label for="<30">выше 30%</label>
 						</fieldset>
 						<fieldset class="form-item">
-							<legend>Наполнители:</legend>
+							<legend class="legend">Наполнители:</legend>
 							<input type="checkbox" name="chocolate" id="chocolate">
 							<label for="chocolate">шоколадные</label>
 							<input type="checkbox" name="sugar" id="sugar">
@@ -297,18 +297,18 @@
 							</p>
 						</li>
 					</ul>
-					<ul class="pagination-list">
-						<li>
-							<a class="pagination-button-back" href="#"><p class="visually-hidden">Назад</p></a>
-						</li>
-						<li  class="pagination-item pagination-item-current"><a>1</a></li>
-						<li><a class="pagination-item" href="#">2</a></li>
-						<li><a class="pagination-item" href="#">3</a></li>
-						<li><a class="pagination-item" href="#">4</a></li>
-						<li><a class="pagination-item" href="#">5</a></li>
-						<li><a class="pagination-button-next" href="#"><p class="visually-hidden">Вперед</p></a></li>
-					</ul>
 				</section>
+				<ul class="pagination-list">
+					<li>
+						<a class="pagination-button-back" href="#"><p class="visually-hidden">Назад</p></a>
+					</li>
+					<li  class="pagination-item pagination-item-current"><a>1</a></li>
+					<li><a class="pagination-item" href="#">2</a></li>
+					<li><a class="pagination-item" href="#">3</a></li>
+					<li><a class="pagination-item" href="#">4</a></li>
+					<li><a class="pagination-item" href="#">5</a></li>
+					<li><a class="pagination-button-next" href="#"><p class="visually-hidden">Вперед</p></a></li>
+				</ul>
 			</div>
 		</main>
 		<footer class="main-footer">
