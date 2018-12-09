@@ -438,7 +438,23 @@ a {
   	color: #ffffff;
   	text-align: center;
 }
+.catalog-item {
+	position: relative;
+}
+.hit-image::before {
+	position: absolute;
+	content: "";
+
+	background-image: url(../img/hit.svg);
+
+	width: 61px;
+	height: 61px;
+}
 .catalog b {
+	position: absolute;
+	left: 0;
+	top: 62%;
+
 	font-size: 45px;
   	line-height: 45px;
   	font-weight: bold;
@@ -457,13 +473,16 @@ a {
 	border-radius: 50%;
 }
 .features b {
+	display: inline-block;
+
 	font-size: 24px;
   	line-height: 30px;
   	font-weight: medium;
   	color: #323232;
+  	padding: 20px;
 }
 .features {
-	padding: 25px 20px;
+	padding: 0;
 
 	font-size: 16px;
   	line-height: 22px;
@@ -472,6 +491,66 @@ a {
 
   	background: #e4d8bd url(../img/wafer-pattern.jpg) repeat;
   	border-radius: 15px;
+}
+.features-list {
+	display: flex;
+	flex-wrap: wrap;
+	
+	margin: 0;
+}
+.features-item {
+	position: relative;
+	
+	margin: 0;
+	padding: 5px 0 15px 40px;
+	width: 480px;
+}
+.features-item:nth-child(2n) {
+	padding-left: 80px;
+}
+.icecream-logo::before {
+	position: absolute;
+	content: "";
+	left: -15px;
+	top: -10px;
+
+	background-image: url(../img/icecream.svg);
+
+	width: 49px;
+	height: 49px;
+}
+.cow-logo::before {
+	position: absolute;
+	content: "";
+	left: 22px;
+	top: -10px;
+
+	background-image: url(../img/cow.svg);
+	
+	width: 49px;
+	height: 49px;
+}
+.leaf-logo::before {
+	position: absolute;
+	content: "";
+	left: -15px;
+	top: -10px;
+
+	background-image: url(../img/leaf.svg);
+
+	width: 49px;
+	height: 49px;
+}
+.thermometer-logo::before {
+	position: absolute;
+	content: "";
+	left: 22px;
+	top: -10px;
+
+	background-image: url(../img/thermometer.svg);
+
+	width: 49px;
+	height: 49px;
 }
 .blog {
 	width: 560px;
@@ -890,19 +969,6 @@ a {
 }
 .catalog li:nth-child(4n) {
 	margin-right: 0;
-}
-.features-list {
-	display: flex;
-	flex-wrap: wrap;
-	
-	margin: 0;
-	padding: 0;
-}
-.features-item {
-	flex-direction: flex-end;
-
-	padding: 12px 0px 10px 70px;
-	width: 480px;
 }
 .blocks {
 	display: flex;
