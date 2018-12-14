@@ -15,47 +15,63 @@
 						<img src="img/logo.svg" height="64" width="154" alt="Лого">
 					</a>
 					<ul class="site-navigation">
-						<li>
-							<a class="site-navigation-current">Каталог</a>
-							<ul class="catalog-navigation">
-								<li><a href="#">Новинки</a></li>
-								<li class="catalog-navigation-current"><a>Сливочное</a></li>
-								<li><a href="#">Щербеты</a></li>
-								<li><a href="#">Фруктовый лед</a></li>
-								<li><a href="#">Мелорин</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Доставка и оплата</a></li>
-						<li><a href="#">О компании</a></li>
-					</ul>
+							<li class="site-navigation-item">
+								<a class="site-navigation-link" href="catalog.html">Каталог</a>
+								<ul class="catalog-navigation">
+									<li class="catalog-navigation-item">
+										<a class="catalog-navigation-link" href="#">Новинки</a>
+									</li>
+									<li class="catalog-navigation-item">
+										<a class="catalog-navigation-link" href="catalog.html">Сливочное</a>
+									</li>
+									<li class="catalog-navigation-item">
+										<a class="catalog-navigation-link" href="#">Щербеты</a>
+									</li>
+									<li class="catalog-navigation-item">
+										<a class="catalog-navigation-link" href="#">Фруктовый лед</a>
+									</li>
+									<li class="catalog-navigation-item">
+										<a class="catalog-navigation-link" href="#">Мелорин</a>
+									</li>
+								</ul>
+							</li>
+							<li class="site-navigation-item">
+								<a class="site-navigation-link" href="#">Доставка и оплата</a>
+							</li>
+							<li class="site-navigation-item">
+								<a class="site-navigation-link" href="#">О компании</a>
+							</li>
+						</ul>
 					<ul class="user-navigation">
 						<li class="user-navigation-item search">
-							<a href="#">Поиск</a>
-							<form action="#" method="get">
+							<a class="user-navigation-link search-link" href="#">Поиск</a>
+							<form class="search-form" action="#" method="get">
 								<p class="form-row">
+									<input class="search-input" type="search" id="search" name="search" placeholder=" ">
 									<label class="search-label" for="search">Что ищем?</label>
-									<input type="search" id="search" name="search" placeholder=" ">
 								</p>
 							</form>
 						</li>
 						<li class="user-navigation-item enter">
-							<a href="#">Вход</a>
-							<form action="#" method="post">
-								<p class="form-row">
-									<label class="email-label" for="email">Электронная почта</label>
-									<input type="email" id="email" name="email" placeholder=" ">
-								</p>
-								<p class="form-row">
-									<label class="password-label" for="password">Пароль</label>
-									<input type="password" id="password" name="password" placeholder=" ">
-								</p>
-								<button class="button">Войти</button>
-								<a href="#">Забыли пароль?</a>
-								<a href="#">Новая регистрация</a>
-							</form>
-						</li>
+								<a class="user-navigation-link enter-link" href="#">Вход</a>
+								<form class="enter-form" action="#" method="post">
+									<p class="form-row">
+										<input class="enter-email-input" type="email" id="email" name="email" placeholder=" ">
+										<label class="enter-email-label" class="email-label" for="email">Электронная почта</label>
+									</p>
+									<p class="form-row">
+										<input class="enter-password-input" type="password" id="password" name="password" placeholder=" ">
+										<label class="enter-password-label" for="password">Пароль</label>
+									</p>
+									<div class="form-block">
+										<button class="button">Войти</button>
+										<a class="enter-form-link" href="#">Забыли пароль?</a>
+										<a class="enter-form-link" href="#">Новая регистрация</a>
+									</div>
+								</form>
+							</li>
 						<li class="user-navigation-item basket">
-							<a href="#">2 товара</a>
+							<a class="user-navigation-link" href="#">2 товара</a>
 							<div class="basket-modal">
 								<div class="basket-item item-1">
 									<button class="modal-close">
@@ -160,6 +176,7 @@
 									Сливочное с апельсиновым джемом и цитрусовой стружкой
 								</a>
 							</p>
+							<a class="button catalog-button" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<p class="catalog-item-image">
@@ -173,6 +190,7 @@
 									Сливочно-кофейное с кусочками шоколада
 								</a>
 							</p>
+							<a class="button catalog-button" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<p class="catalog-item-image">
@@ -186,6 +204,7 @@
 									Сливочно-клубничное с присыпкой из белого шоколада
 								</a>
 							</p>
+							<a class="button catalog-button" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<p class="catalog-item-image">
@@ -199,6 +218,7 @@
 									Сливочное крем-брюле с карамельной подливкой
 								</a>
 							</p>
+							<a class="button catalog-button" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<p class="catalog-item-image">
@@ -212,6 +232,7 @@
 									Сливочное с брусничным джемом
 								</a>
 							</p>
+							<a class="button catalog-button" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<p class="catalog-item-image">
@@ -225,6 +246,7 @@
 									Сливочно-черничное с цельными ягодами черники
 								</a>
 							</p>
+							<a class="button catalog-button" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<p class="catalog-item-image">
@@ -238,6 +260,7 @@
 									Сливочно-лимонное с карамельной присыпкой
 								</a>
 							</p>
+							<a class="button catalog-button" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<p class="catalog-item-image">
@@ -251,6 +274,7 @@
 									Сливочное с шоколадной стружкой
 								</a>
 							</p>
+							<a class="button catalog-button" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<p class="catalog-item-image">
@@ -264,6 +288,7 @@
 									Сливочно-ванильное с кусочками шоколада
 								</a>
 							</p>
+							<a class="button catalog-button" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<p class="catalog-item-image">
@@ -277,6 +302,7 @@
 									Сливочное с ментоловым сиропом
 								</a>
 							</p>
+							<a class="button catalog-button" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<p class="catalog-item-image">
@@ -290,6 +316,7 @@
 									Сливочное с кусочками черного шоколада
 								</a>
 							</p>
+							<a class="button catalog-button" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<p class="catalog-item-image">
@@ -303,6 +330,7 @@
 									Сливочное с мятным сиропом
 								</a>
 							</p>
+							<a class="button catalog-button" href="#">Быстрый просмотр</a>
 						</li>
 					</ul>
 				</section>
@@ -325,7 +353,7 @@
 					<li class="social-button twitter"><a href="#">Твитер</a></li>
 					<li class="social-button instagram"><a href="#">Инстаграм</a></li>
 					<li  class="social-button facebook"><a href="#">Фейсбук</a></li>
-					<li  class="social-button VK"><a href="#">Вконтакте</a></li>
+					<li  class="social-button vk"><a href="#">Вконтакте</a></li>
 				</ul>
 				<div class="documentation">
 					<ul class="documentation-list">
