@@ -436,7 +436,6 @@ a {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
-	
 }
 .form-block .button {
 
@@ -1159,17 +1158,122 @@ a {
 	margin: 0px; 
 }
 .modal-feedback {
+	position: absolute;
+	top: 340px;
+	left: 50%;
+
+	display: none;
+	flex-direction: column;
+	width: 428px;
+	margin-left: -239px;
+	padding: 25px;
+
 	font-size: 16px;
   	line-height: 24px;
   	font-weight: 400;
   	color: #999999;
+
+  	background-color: #f8f7f4;
+  	border-radius: 10px;
+	box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 .modal-feedback h3 {
+	display: block;
+	margin: 0;
+	margin-bottom: 20px;
+
 	font-size: 24px;
   	line-height: 28px;
   	font-weight: medium;
   	color: #323232;
 }
+.modal-close {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	
+	width: 25px;
+	height: 25px;
+	border: 0;
+	padding: 0;
+
+	background-color: transparent;
+
+	cursor: pointer;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 12px;
+  left: 1px;
+
+  width: 22px;
+  height: 2px;
+
+  background-color: #231f20;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+.modal-form .form-row {
+	position: relative;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.modal-name-input,
+.modal-email-input {
+	display: inline-block;
+	width: 239px;
+	height: 44px;
+
+	margin: 0;
+	padding: 0 14px;
+}
+.modal-name-label,
+.modal-email-label {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+.modal-name-input:focus + .modal-name-label,
+.modal-email-input:focus + .modal-email-label {
+	top: -17px;
+	color: black;
+	font-size: 12px;
+	line-height: 18px;
+}
+.modal-name-input:not(:placeholder-shown) + .modal-name-label,
+.modal-email-input:not(:placeholder-shown) + .modal-email-label {
+	display: none;
+}
+.modal-textarea {
+	display: inline-block;
+	width: 395px;
+	height: 120px;
+	
+	margin-bottom: 20px;
+	padding: 15px;
+
+	overflow: auto;
+}
+.modal-button {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
 .main-navigation input,
 .subscription input,
 .modal-feedback input,
@@ -1210,9 +1314,6 @@ a {
   	overflow: hidden;
 }
 
-.modal {
-	display: none;
-}
 .basket-modal {
 	display: none;
 }
