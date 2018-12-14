@@ -267,21 +267,19 @@
 				</div>
 			</footer>
 			<section class="modal modal-feedback">
-				<form action="#" method="post">
-					<h3>Мы обязательно вам ответим!</h3>
-					<button class="modal-close">
-						<span class="visually-hidden">Закрыть</span>
-					</button>
+				<h3>Мы обязательно вам ответим!</h3>
+				<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+				<form class="modal-form" action="#" method="post">
 					<p class="form-row">
-						<label class="name-label" for="name">Как вас зовут?</label>
-						<input type="text" id="name" name="name" placeholder=" ">
+						<input class="modal-name-input" type="text" id="name" name="name" placeholder=" ">
+						<label class="modal-name-label" for="name">Как вас зовут?</label>
 					</p>
 					<p class="form-row">
-						<label class="email-label" for="email-modal">Ваша почта для ответа?</label>
-						<input type="email" id="email-modal" name="email" placeholder=" ">
+						<input class="modal-email-input" type="email" id="email-modal" name="email" placeholder=" ">
+						<label class="modal-email-label" for="email-modal">Ваша почта для ответа?</label>
 					</p>
-					<textarea placeholder="Напишите что-нибудь..."></textarea>
-					<button class="button">Отправить</button>
+					<textarea class="modal-textarea" placeholder="Напишите что-нибудь..."></textarea>
+					<button class="button modal-button">Отправить</button>
 				</form>
 			</section>
 		</div>
