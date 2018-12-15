@@ -184,6 +184,10 @@ a {
 	margin: 23px 0;
 	padding-left: 0;
 }
+.site-navigation-item,
+.user-navigation-item {
+	padding-bottom: 10px;
+}
 .site-navigation-link {
 	display: block;
 	padding: 7px 15px;
@@ -215,7 +219,7 @@ a {
 }
 .catalog-navigation {
 	position: absolute;
-	top: 32px;
+	top: 37px;
 	left: -5px;
 	z-index: 1;
 
@@ -334,7 +338,7 @@ a {
 }
 .search-form {
 	position: absolute;
-	top: 32px;
+	top: 37px;
 	right: 0;
 	z-index: 1;
 	
@@ -398,7 +402,7 @@ a {
 }
 .enter-form {
 	position: absolute;
-	top: 32px;
+	top: 37px;
 	right: 0;
 	z-index: 1;
 
