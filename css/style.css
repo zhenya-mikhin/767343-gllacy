@@ -515,9 +515,9 @@ a {
 }
 .call {
 	display: inline-block;
-	float: right;
 	
 	margin: 0;
+	margin-left: 979px;
 
 	font-size: 22px;
   	line-height: 24px;
@@ -574,7 +574,7 @@ a {
 
 	margin-bottom: 5px;
 }
-.inner-page .form-row {
+.inner-page .filters .form-row {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
@@ -619,24 +619,27 @@ a {
   	color: #ffffff;
 }
 .stock h3 {
+	display: inline-block;
 	font-size: 35px;
   	line-height: 41px;
   	font-weight: bold;
   	color: #ffffff;
-  	margin: 20px;
+  	margin: 18px;
 }
 .stock p {
-	margin: 20px;
-	margin-bottom: 40px;
+	margin: 0 20px 35px 20px;
 }
 .stock-jam,
 .stock-topping {
 	position: relative;
 }
-.stock-jam .button,
+.stock-jam .button {
+	display: inline-block;
+	margin-left: 375px;
+}
 .stock-topping .button {
-	margin-right: 20px;
-	float: right;
+	display: inline-block;
+	margin-left: 350px;
 }
 .stock-jam {
 	width: 560px;
