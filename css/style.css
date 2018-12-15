@@ -14,6 +14,33 @@ a {
 	color: #ffffff;
 	text-decoration: none;
 }
+.button:not(.form-button):not(.slide-button) {
+	font-size: 18px;
+  	line-height: 24px;
+  	font-weight: bold;
+  	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+	padding: 12px 22px;
+
+  	background-image: linear-gradient(to bottom, #f26843 , #e74a35);
+  	border-radius: 50px;
+  	border: none;
+  	box-shadow: 0 2px 2px rgba(85,8,0,.54);
+
+  	cursor: pointer;
+}
+.button:not(.form-button):hover,
+.button:not(.form-button):focus {
+	background-image: linear-gradient(to bottom, #f58669 , #ec6f5e);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+.button:not(.form-button):active {
+	background-image: linear-gradient(to bottom, #e74b36 , #f26843);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
 
 
 .site-wrapper {
@@ -188,7 +215,7 @@ a {
 }
 .catalog-navigation {
 	position: absolute;
-	top: 35px;
+	top: 32px;
 	left: -5px;
 	z-index: 1;
 
@@ -307,7 +334,7 @@ a {
 }
 .search-form {
 	position: absolute;
-	top: 35px;
+	top: 32px;
 	right: 0;
 	z-index: 1;
 	
@@ -327,7 +354,7 @@ a {
 .search-input {
 	display: inline-block;
 	width: 310px;
-	min-height: 45px;
+	height: 45px;
 	margin: 0;
 	padding: 0 15px;
 }
@@ -345,14 +372,6 @@ a {
 	top: 10px;
 	left: 20px;
 }
-
-
-
-
-
-
-
-
 
 .enter-link {
 	position: relative;
@@ -379,7 +398,7 @@ a {
 }
 .enter-form {
 	position: absolute;
-	top: 35px;
+	top: 32px;
 	right: 0;
 	z-index: 1;
 
@@ -387,7 +406,7 @@ a {
 	flex-direction: column;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	width: 277px;
+	width: 257px;
 	padding: 20px;
 
 
@@ -408,10 +427,17 @@ a {
 .enter-email-input,
 .enter-password-input {
 	display: inline-block;
-	width: 240px;
-	min-height: 44px;
+	width: 225px;
+	height: 44px;
 	margin: 0;
 	padding: 0 15px;
+}
+.enter-email-input:hover,
+.enter-password-input:hover,
+.enter-email-input:focus,
+.enter-password-input:focus {
+	width: 223px;
+	height: 42px;
 }
 .enter-email-label,
 .enter-password-label {
@@ -432,16 +458,20 @@ a {
 }
 .form-block {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	justify-content: flex-start;
 	align-items: center;
 }
-.form-block .button {
-
+.form-block .form-row {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+.form-block .button {    /* Почему не переопределяет ? */
+	padding: 12px 30px;
 }
 .enter-form-link {
-	/*display: inline-block;*/
+	display: inline-block;
 	width: 125px;
 
 	font-size: 13px;
@@ -503,32 +533,7 @@ a {
   	line-height: 16px;
 }
 
-.button:not(.form-button):not(.slide-button) {
-	font-size: 18px;
-  	line-height: 24px;
-  	font-weight: bold;
-  	color: #ffffff;
-	text-align: center;
-	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
-	padding: 12px 22px;
-
-  	background-image: linear-gradient(to bottom, #f26843 , #e74a35);
-  	border-radius: 50px;
-  	border: none;
-  	box-shadow: 0 2px 2px rgba(85,8,0,.54);
-
-  	cursor: pointer;
-}
-.button:not(.form-button):hover,
-.button:not(.form-button):focus {
-	background-image: linear-gradient(to bottom, #f58669 , #ec6f5e);
-	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-}
-.button:not(.form-button):active {
-	background-image: linear-gradient(to bottom, #e74b36 , #f26843);
-	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-}
 .slide-button {
 	display: inline-block;
   	padding: 12px 44px;
@@ -884,14 +889,19 @@ a {
 .subscription-input {
 	display: inline-block;
 
-	width: 335px;
-	min-height: 45px;
+	width: 333px;
+	height: 45px;
 
 	padding: 0 15px;
 
 	font-family: inherit;
   	font-size: inherit;
   	line-height: inherit;
+}
+.subscription-input:hover,
+.subscription-input:focus {
+	width: 331px;
+	height: 43px;
 }
 .subscription-input:focus + .subscription-label {
 	top: -10px;
@@ -1235,6 +1245,14 @@ a {
 	margin: 0;
 	padding: 0 14px;
 }
+.modal-name-input:hover,
+.modal-email-input:hover,
+.modal-name-input:focus,
+.modal-email-input:focus {
+	width: 237px;
+	height: 42px;
+
+}
 .modal-name-label,
 .modal-email-label {
 	position: absolute;
@@ -1261,6 +1279,11 @@ a {
 	padding: 15px;
 
 	overflow: auto;
+}
+.modal-textarea:hover,
+.modal-textarea:focus {
+	width: 393px;
+	height: 118px;
 }
 .modal-button {
 	float: right;
@@ -1292,6 +1315,7 @@ a {
 .modal-feedback input:focus,
 .modal-feedback textarea:focus {
   	border: 2px solid #8fbdec;
+  	outline: none;
 }
 
 
