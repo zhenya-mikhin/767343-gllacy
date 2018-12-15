@@ -354,7 +354,7 @@ a {
 .search-input {
 	display: inline-block;
 	width: 310px;
-	height: 45px;
+	min-height: 45px;
 	margin: 0;
 	padding: 0 15px;
 }
@@ -428,7 +428,7 @@ a {
 .enter-password-input {
 	display: inline-block;
 	width: 225px;
-	height: 44px;
+	min-height: 44px;
 	margin: 0;
 	padding: 0 15px;
 }
@@ -437,7 +437,7 @@ a {
 .enter-email-input:focus,
 .enter-password-input:focus {
 	width: 223px;
-	height: 42px;
+	min-height: 42px;
 }
 .enter-email-label,
 .enter-password-label {
@@ -893,7 +893,7 @@ a {
 	display: inline-block;
 
 	width: 333px;
-	height: 45px;
+	min-height: 45px;
 
 	padding: 0 15px;
 
@@ -904,7 +904,7 @@ a {
 .subscription-input:hover,
 .subscription-input:focus {
 	width: 331px;
-	height: 43px;
+	min-height: 43px;
 }
 .subscription-input:focus + .subscription-label {
 	top: -10px;
@@ -1248,7 +1248,7 @@ a {
 .modal-email-input {
 	display: inline-block;
 	width: 239px;
-	height: 44px;
+	min-height: 44px;
 
 	margin: 0;
 	padding: 0 14px;
@@ -1258,7 +1258,7 @@ a {
 .modal-name-input:focus,
 .modal-email-input:focus {
 	width: 237px;
-	height: 42px;
+	min-height: 42px;
 
 }
 .modal-name-label,
@@ -1281,7 +1281,7 @@ a {
 .modal-textarea {
 	display: inline-block;
 	width: 395px;
-	height: 120px;
+	min-height: 120px;
 	
 	margin-bottom: 20px;
 	padding: 15px;
@@ -1291,7 +1291,7 @@ a {
 .modal-textarea:hover,
 .modal-textarea:focus {
 	width: 393px;
-	height: 118px;
+	min-height: 118px;
 }
 .modal-button {
 	float: right;
