@@ -179,8 +179,10 @@ a {
 	flex-grow: 1;
 	display: flex;
 	justify-content: flex-start;
-	align-items: flex-end; 
+	align-items: flex-end;
+	flex-wrap: wrap;
 	
+	width: 400px;
 	margin: 23px 0;
 	padding-left: 0;
 }
@@ -283,15 +285,15 @@ a {
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: wrap;
-
+	
+	width: 267px;
 	margin: 23px 0;
+	padding: 0;
 
 	font-size: 14px;
   	line-height: 16px;
   	font-weight: 500;
   	color: #ffffff;
-
-  	padding: 0;
 }
 .user-navigation-item {
 	position: relative;
@@ -706,7 +708,7 @@ a {
 .catalog b {
 	position: absolute;
 	left: 0;
-	top: 62%;
+	top: 226px;
 
 	font-size: 45px;
   	line-height: 45px;
@@ -978,6 +980,7 @@ a {
 }
 .pagination-list {
 	display: flex;
+	width: 195px;
 
 	font-size: 16px;
   	line-height: 18px;
@@ -1020,6 +1023,10 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	width: 267px;
+}
+.social-button {
+	width: 49px;
+	min-height: 49px;
 }
 .social-button a {
 	position: relative;
@@ -1135,16 +1142,19 @@ a {
 .copyright a:focus {
 	color: #ffbc9e;
 }
-.documentation-list {
-	width: 560px;
-	height: 50px;
-	
-	padding: 0;
-
+.documentation {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	width: 560px;
+	min-height: 50px;
+}
+.documentation-list {
+	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
+
+	width: 340px;
+	padding: 0;
 
 	font-size: 13px;
   	line-height: 18px;
