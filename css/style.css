@@ -164,7 +164,7 @@ a {
 .site-navigation,
 .user-navigation,
 .catalog-navigation,
-.catalod-list,
+.catalog-list,
 .features-list,
 .social-list,
 .documentation-list,
@@ -286,7 +286,7 @@ a {
 	justify-content: flex-end;
 	flex-wrap: wrap;
 	
-	width: 267px;
+	width: 277px;
 	margin: 23px 0;
 	padding: 0;
 
@@ -664,35 +664,36 @@ a {
   	color: #ffffff;
   	text-align: center;
 }
-.catalog ul {
+.catalog-list {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	margin: 20px 0;
 	padding: 0;
 }
-.catalog li {
+.catalog-item {
+	position: relative;
+	z-index: 1;
+
 	width: 267px;
 	margin-right: 26px;
 }
-.catalog li:nth-child(4n) {
+.catalog-item:nth-child(4n) {
 	margin-right: 0;
 }
-.catalog-item {
-	position: relative;
-}
-.catalog-item::before {
+.catalog-item:hover .catalog-item-image::after {
+	content: "";
 	position: absolute;
-	z-index: 1;
-	display: none;
-	width: 323px;
-	height: 440px;
-
+	z-index: -1;
+	top: 9px;
+	left: -13px;
+	display: block;
+	width: 293px;
+	height: 427px;
+	
+	border-radius: 5px;
 	background-color: rgba(255,255,255,0.2);
 	box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-}
-.catalog-item:hover .catalog-item::before {
-	display: block;
 }
 .hit-image::before {
 	position: absolute;
@@ -735,6 +736,10 @@ a {
 	height: 270px;
 }
 .catalog-button {
+	position: absolute;
+	z-index: 2;
+	bottom: -50px;
+	left: 30px;
 	display: none;
 }
 .catalog-item:hover .catalog-button {
@@ -981,6 +986,7 @@ a {
 .pagination-list {
 	display: flex;
 	width: 195px;
+	margin-top: 90px;
 
 	font-size: 16px;
   	line-height: 18px;
