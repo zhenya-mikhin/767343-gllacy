@@ -49,7 +49,7 @@ a {
   	background-image: url(../img/slider-item1.png);
   	background-repeat: no-repeat;
   	background-position-x: center;
-  	background-position-y: 83px; 
+  	background-position-y: 15px; 
 
   	transition: background-image 0.5s ease, background-color 0.5s ease; 
 }
@@ -70,7 +70,7 @@ a {
 .slider {
 	position: relative;
 
-	padding-top: 321px;
+	padding-top: 261px;
 
 	text-align: center;
 	color: #ffffff;
@@ -687,6 +687,7 @@ a {
 	z-index: -1;
 	top: 9px;
 	left: -13px;
+	
 	display: block;
 	width: 293px;
 	height: 427px;
