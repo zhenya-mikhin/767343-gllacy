@@ -937,9 +937,13 @@ a {
   	font-weight: bold;
   	color: #ffffff;
 }
-.catalog a {
+.catalog-item-description {
 	font-weight: 400;
 	text-decoration: underline;
+}
+.catalog-item-description a:hover,
+.catalog-item-description a:focus {
+	color: #ffbc9e;
 }
 .catalog small {
 	font-size: 30px;
