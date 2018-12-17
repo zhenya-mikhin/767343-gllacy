@@ -759,10 +759,13 @@ a {
   width: 16px;
   height: 16px;
   
-  border: 4px solid #ffffff;
+  border: 4px solid rgba(252,253,252,0.7);
   border-radius: 50%;
 
   cursor: pointer;
+}
+.filters-input-radio:hover + .filters-label-radio::before {
+ 	border: 4px solid rgba(252,253,252,1);
 }
 .filters-input-radio:checked + .filters-label-radio::after {
   content: "";
@@ -775,8 +778,11 @@ a {
   width: 8px;
   height: 8px;
 
-  background-color: #ffffff;
+  background-color: rgba(252,253,252,0.7);
   border-radius: 50%;
+}
+.filters-input-radio:checked:hover + .filters-label-radio::after {
+	background-color: rgba(252,253,252,1);
 }
 .filters-label-checkbox {
 	position: relative;
