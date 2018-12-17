@@ -1062,7 +1062,7 @@ a {
 	padding: 30px 25px;
 	border-radius: 15px;
 
-	width: 263px;
+	width: 241px;
 
 	font-size: 14px;
   	line-height: 20px;
@@ -1071,24 +1071,24 @@ a {
 
 	background-color: #fcfcfc;
 }
-.call-feedback p {
-	width: 205px;
-	margin: 0;
-	padding: 5px 0;
+.call-feedback-row {
+	margin-bottom: 20px;
 }
-.call-feedback p:nth-of-type(2n) {
+.call-feedback-row p {
+	display: inline-block;
+	width: 195px;
+	margin: 0;
+}
+.call-feedback-row b {
+	display: inline-block;
 	width: 225px;
+	margin: 0;
 
 	font-size: 18px;
-  	line-height: 24px;
-  	font-weight: bold;
-  	color: #323232;
+	line-height: 24px;
+	font-weight: bold;
+}
 
-  	padding-top: 0;
-}
-.call-feedback .button {
-	margin-top: 20px;
-}
 .pagination-list {
 	display: flex;
 	width: 195px;
