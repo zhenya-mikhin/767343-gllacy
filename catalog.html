@@ -111,8 +111,8 @@
 			<div class="container">
 				<h1 class="visually-hidden">Каталог</h1>
 				<ul class="breadcrumbs">
-					<li><a href="index.html">Главная</a></li>
-					<li><a href="#">Каталог</a></li>
+					<li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+					<li class="breadcrumbs-item"><a href="#">Каталог</a></li>
 					<li class="breadcrumbs-current"><a>Сливочное</a></li>
 				</ul>
 				<h2>Сливочное мороженое</h2>
@@ -136,29 +136,29 @@
 						<fieldset class="form-item">
 							<legend class="legend">Жирность:</legend>
 							<p  class="form-row">
-								<input type="radio" name="fat" value="0" id="0">
-								<label for="0">0%</label>
-								<input type="radio" name="fat" value="10" id="10" checked>
-								<label for="10">10%</label>
-								<input type="radio" name="fat" value="30" id="30">
-								<label for="30">до 30%</label>
-								<input type="radio" name="fat" value="<30" id="<30">
-								<label for="<30">выше 30%</label>
+								<input class="visually-hidden filters-input-radio" type="radio" name="fat" value="0" id="0">
+								<label class="filters-label-radio" for="0">0%</label>
+								<input class="visually-hidden filters-input-radio" type="radio" name="fat" value="10" id="10" checked>
+								<label class="filters-label-radio" for="10">10%</label>
+								<input class="visually-hidden filters-input-radio" type="radio" name="fat" value="30" id="30">
+								<label class="filters-label-radio" for="30">до 30%</label>
+								<input class="visually-hidden filters-input-radio" type="radio" name="fat" value="<30" id="<30">
+								<label class="filters-label-radio" for="<30">выше 30%</label>
 							</p>
 						</fieldset>
 						<fieldset class="form-item">
 							<legend class="legend">Наполнители:</legend>
 							<p  class="form-row">
-								<input type="checkbox" name="chocolate" id="chocolate">
-								<label for="chocolate">шоколадные</label>
-								<input type="checkbox" name="sugar" id="sugar">
-								<label for="sugar">сахарные присыпки</label>
-								<input type="checkbox" name="fruit" id="fruit">
-								<label for="fruit">фрукты</label>
-								<input type="checkbox" name="syrup" id="syrup">
-								<label for="syrup">сиропы</label>
-								<input type="checkbox" name="jam" id="jam">
-								<label for="jam">джемы</label>
+								<input class="visually-hidden filters-input-checkbox" type="checkbox" name="chocolate" id="chocolate">
+								<label class="filters-label-checkbox" for="chocolate">шоколадные</label>
+								<input class="visually-hidden filters-input-checkbox" type="checkbox" name="sugar" id="sugar">
+								<label class="filters-label-checkbox" for="sugar">сахарные присыпки</label>
+								<input class="visually-hidden filters-input-checkbox" type="checkbox" name="fruit" id="fruit">
+								<label class="filters-label-checkbox" for="fruit">фрукты</label>
+								<input class="visually-hidden filters-input-checkbox" type="checkbox" name="syrup" id="syrup">
+								<label class="filters-label-checkbox" for="syrup">сиропы</label>
+								<input class="visually-hidden filters-input-checkbox" type="checkbox" name="jam" id="jam">
+								<label class="filters-label-checkbox" for="jam">джемы</label>
 							</p>
 						</fieldset>
 						<button class="button form-button">Применить</button>
@@ -337,15 +337,17 @@
 					</ul>
 				</section>
 				<ul class="pagination-list">
-					<li>
+					<li class="pagination-button">
 						<a class="pagination-button-back" href="#"><p class="visually-hidden">Назад</p></a>
 					</li>
-					<li  class="pagination-item pagination-item-current"><a>1</a></li>
-					<li><a class="pagination-item" href="#">2</a></li>
-					<li><a class="pagination-item" href="#">3</a></li>
-					<li><a class="pagination-item" href="#">4</a></li>
-					<li><a class="pagination-item" href="#">5</a></li>
-					<li><a class="pagination-button-next" href="#"><p class="visually-hidden">Вперед</p></a></li>
+					<li  class="pagination-item pagination-item-current"><a class="pagination-link">1</a></li>
+					<li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+					<li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+					<li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
+					<li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
+					<li class="pagination-button">
+						<a class="pagination-button-next pagination-link" href="#"><p class="visually-hidden">Вперед</p></a>
+					</li>
 				</ul>
 			</div>
 		</main>
