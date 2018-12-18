@@ -856,6 +856,16 @@ a {
 .range-controls .toggle-max {
   left: 130px;
 }
+.range-controls .toggle-min:hover {
+	left: 24px;
+	top: -9px;
+	border: 9px solid #ffffff;
+}
+.range-controls .toggle-max:hover {
+	left: 129px;
+	top: -9px;
+	border: 9px solid #ffffff;
+}
 .filters-label-radio {
 	position: relative;
 	margin-left: 35px;
