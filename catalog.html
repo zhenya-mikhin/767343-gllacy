@@ -121,18 +121,29 @@
 					<form class="filters-form" action="#" method="post">
 						<fieldset class="form-item">
 							<legend class="legend">Сортировка:</legend>
-							<p  class="form-row">
-								<select name="sort">
+							<p  class="form-row row-select">
+								<select class="filters-select" name="sort">
 									<option value="popular">по популярности</option>
+									<option value="price">по цене</option>
+									<option value="fat">по жирности</option>
 								</select>
 							</p>
 						</fieldset>
-						<fieldset class="form-item">
-							<legend class="legend">Цена: 100 руб. – 500 руб.</legend>
-							<p  class="form-row">
-								<input type="range" name="range" min="100" max="500">
-							</p>
-						</fieldset>
+						<div class="form-item filters-price">
+							<p class="price-controls">
+								<label class="min-price">Цена: <input name="min-price" type="text" value="100"> руб.</label>
+            					<label class="max-price">- <input name="max-price" type="text" value="500"> руб.</label>
+            				</p>
+							<div  class="range-row">
+								<div class="range-controls">
+            						<div class="scale">
+              							<div class="bar"></div>
+            						</div>
+            						<div class="toggle toggle-min"></div>
+            						<div class="toggle toggle-max"></div>
+            					</div>
+							</div>
+						</div>
 						<fieldset class="form-item">
 							<legend class="legend">Жирность:</legend>
 							<p  class="form-row">
