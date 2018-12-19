@@ -998,6 +998,9 @@ a {
 	display: inline-block;
 	margin-left: 375px;
 }
+.stock-topping {
+	border-radius: 16px;
+}
 .stock-topping .button {
 	display: inline-block;
 	margin-left: 350px;
@@ -1006,6 +1009,7 @@ a {
 	width: 560px;
 	min-height: 230px;
 	background: #772b3b url(../img/raspberries-background.jpg) no-repeat;
+	border-radius: 16px;
 }
 .stock-topping {
 	width: 560px;
@@ -1193,6 +1197,12 @@ a {
 
 	width: 49px;
 	height: 49px;
+}
+
+.blocks {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
 }
 .blog {
 	width: 560px;
@@ -1828,14 +1838,6 @@ a {
 	display: block;
 }
 
-
-
-
-
-
-
-
-
 .main-navigation input,
 .subscription input,
 .modal-feedback input,
@@ -1857,10 +1859,6 @@ a {
   	outline: none;
 }
 
-
-
-/* На время, мне так проще сетки строить */
-
 .visually-hidden {
 	position: absolute;
 
@@ -1875,25 +1873,4 @@ a {
   	clip-path: inset(100%);
   	clip: rect(0 0 0 0);
   	overflow: hidden;
-}
-
-
-
-/* Сетки */
-.blocks {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 40px;
-}
-.stock-jam {
-	border-radius: 16px;
-}
-.stock-topping {
-	border-radius: 16px;
-}
-.main-footer .container {
-	display: flex;
-	justify-content: space-between;
-
-	padding: 18px 0;
 }
