@@ -56,8 +56,8 @@
 							<a class="user-navigation-link enter-link" href="#">Вход</a>
 							<form class="enter-form" action="#" method="post">
 								<p class="form-row">
-									<input class="enter-email-input" type="email" id="email" name="email" placeholder=" ">
-									<label class="enter-email-label" class="email-label" for="email">Электронная почта</label>
+									<input class="enter-email-input" type="email" id="enter-email" name="email" placeholder=" ">
+									<label class="enter-email-label" for="email">Электронная почта</label>
 								</p>
 								<p class="form-row">
 									<input class="enter-password-input" type="password" id="password" name="password" placeholder=" ">
@@ -119,15 +119,14 @@
 				<section class="filters">
 					<h2 class="visually-hidden">Фильтры товаров</h2>
 					<form class="filters-form" action="#" method="post">
-						<fieldset class="form-item">
+						<fieldset class="form-item form-select">
 							<legend class="legend">Сортировка:</legend>
-							<p  class="form-row row-select">
-								<select class="filters-select" name="sort">
-									<option value="popular">по популярности</option>
-									<option value="price">по цене</option>
-									<option value="fat">по жирности</option>
-								</select>
-							</p>
+							<select class="form-row filters-select" name="sort">
+								<option value="popular">по популярности</option>
+								<option value="price">сначала недорогие</option>
+								<option value="fat">сначала дорогие</option>
+								<option value="fat">по жирности</option>
+							</select>
 						</fieldset>
 						<div class="form-item filters-price">
 							<p class="price-controls">
