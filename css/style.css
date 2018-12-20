@@ -521,6 +521,10 @@ a {
 .inner-page .basket > a::before {
 	background-image: url(../img/basket-hover.svg);
 }
+.inner-page .basket a {
+	color: #323232;
+	background-color: #ffffff;
+}
 .basket-modal {
 	position: absolute;
 	right: 0;
@@ -753,21 +757,28 @@ a {
 	font-weight: inherit;
 	color: #ffffff;
 
-	margin-right: 30px;
+	padding: 0 10px;
 	
 	-webkit-appearance: none;
 	border: none;
 	background-color: transparent;
+
+	cursor: pointer;
 }
-.row-select {
+.form-item .filters-select:hover,
+.form-item .filters-select:focus {
+	color: #323232;
+	background-color: #ffffff;
+} 
+.form-select {
 	position: relative;
 }
-.row-select::after {
+.form-select::after {
 	content: "";
 
 	position: absolute;
-	top: 15px;
-	right: 15px;
+	top: 40px;
+	right: 25px;
 	width: 0;
 	height: 0;
 
@@ -776,12 +787,11 @@ a {
   	border-right-color: transparent;
   	border-left-color: transparent;
 }
-.filters-select:hover .row-select::after {
+.form-item .filters-select:hover .form-select::after {
 	border: 6px solid #323232;
-}
-.filters-select:hover,
-.filters-select:focus {
-	color: #323232;
+  	border-bottom-width: 0px;
+  	border-right-color: transparent;
+  	border-left-color: transparent;
 }
 .filters-price {
 	position: relative;
