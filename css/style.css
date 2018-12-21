@@ -1490,10 +1490,12 @@ a {
 	display: flex;
 	justify-content: space-between;
 
-	margin-top: 30px;
 	padding: 18px 0;
 }
-.main-footer .container::before {
+.inner-page .main-footer .container {
+	margin-top: 30px;
+}
+.inner-page .main-footer .container::before {
 	content: "";
 
 	position: absolute;
@@ -1536,6 +1538,7 @@ a {
 	height: 32px;
 
 	opacity: 0.8;
+	cursor: pointer;
 }
 .twitter:hover::before,
 .twitter:focus::before {
@@ -1558,6 +1561,7 @@ a {
 	height: 32px;
 
 	opacity: 0.8;
+	cursor: pointer;
 }
 .instagram:hover::before,
 .instagram:focus::before {
@@ -1583,6 +1587,7 @@ a {
 	height: 32px;
 
 	opacity: 0.8;
+	cursor: pointer;
 }
 .facebook:hover::before,
 .facebook:focus::before {
@@ -1610,6 +1615,7 @@ a {
 	height: 32px;
 
 	opacity: 0.8;
+	cursor: pointer;
 }
 .vk:hover::before,
 .vk:focus::before {
