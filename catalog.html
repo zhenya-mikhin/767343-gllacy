@@ -45,7 +45,7 @@
 					<ul class="user-navigation">
 						<li class="user-navigation-item search">
 							<a class="user-navigation-link search-link" href="#">Поиск</a>
-							<form class="search-form" action="#" method="get">
+							<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
 								<p class="form-row">
 									<input class="search-input" type="search" id="search" name="search" placeholder=" ">
 									<label class="search-label" for="search">Что ищем?</label>
@@ -54,7 +54,7 @@
 						</li>
 						<li class="user-navigation-item enter">
 							<a class="user-navigation-link enter-link" href="#">Вход</a>
-							<form class="enter-form" action="#" method="post">
+							<form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
 								<p class="form-row">
 									<input class="enter-email-input" type="email" id="enter-email" name="email" placeholder=" ">
 									<label class="enter-email-label" for="enter-email">Электронная почта</label>
@@ -118,13 +118,13 @@
 				<h2>Сливочное мороженое</h2>
 				<section class="filters">
 					<h2 class="visually-hidden">Фильтры товаров</h2>
-					<form class="filters-form" action="#" method="post">
+					<form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
 						<fieldset class="form-item form-select">
 							<legend class="legend">Сортировка:</legend>
 							<select class="form-row filters-select" name="sort">
 								<option value="popular">по популярности</option>
-								<option value="price">сначала недорогие</option>
-								<option value="fat">сначала дорогие</option>
+								<option value="price-low">сначала недорогие</option>
+								<option value="price-high">сначала дорогие</option>
 								<option value="fat">по жирности</option>
 							</select>
 						</fieldset>
@@ -387,23 +387,5 @@
 				</div>
 			</div>
 		</footer>
-		<section class="modal modal-feedback">
-			<form action="#" method="post">
-				<h3>Мы обязательно вам ответим!</h3>
-				<button class="modal-close">
-					<span class="visually-hidden">Закрыть</span>
-				</button>
-				<p class="form-row">
-					<label class="name-label" for="name">Как вас зовут?</label>
-					<input type="text" id="name" name="name" placeholder=" ">
-				</p>
-				<p class="form-row">
-					<label class="email-label" for="email-modal">Ваша почта для ответа?</label>
-					<input type="email" id="email-modal" name="email" placeholder=" ">
-				</p>
-				<textarea placeholder="Напишите что-нибудь..."></textarea>
-				<button>Отправить</button>
-			</form>
-		</section>
 	</body>
 </html>
