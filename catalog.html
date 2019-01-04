@@ -39,7 +39,7 @@
 							<a class="site-navigation-link" href="#">Доставка и оплата</a>
 						</li>
 						<li class="site-navigation-item">
-							<a class="site-navigation-link" href="#">О компании</a>
+							<a class="site-navigation-link" href="#">О Компании</a>
 						</li>
 					</ul>
 					<ul class="user-navigation">
@@ -79,7 +79,7 @@
 									<button class="basket-close">
 										<span class="visually-hidden">удалить</span>
 									</button>
-									<img src="img/little-ice-cream1.jpg" width="33" height="33" alt="Апельсиновый пломбир">
+									<img class="basket-image" src="img/little-ice-cream1.jpg" width="33" height="33" alt="Апельсиновый пломбир">
 									<p>Пломбир с апельсиновым джемом</p>
 									<p>1,5 кг х <span class="price-basket">200 руб</span></p>
 									<p>300 руб.</p>
@@ -88,14 +88,14 @@
 									<button class="basket-close">
 										<span class="visually-hidden">удалить</span>
 									</button>
-									<img src="img/little-ice-cream2.jpg" width="33" height="33" alt="Апельсиновый пломбир">
+									<img class="basket-image" src="img/little-ice-cream2.jpg" width="33" height="33" alt="Апельсиновый пломбир">
 									<p>Клубничный пломбир с присыпкой из белого шоколада</p>
 									<p>1,5 кг х <span class="price-basket">300 руб.</span></p>
 									<p>450 руб.</p>
 								</div>
 								<div class="checkout">
 									<p>Итого: 750 руб.</p>
-									<a class="button" href="#">Оформить заказ</a>
+									<a class="button checkout-button" href="#">Оформить заказ</a>
 								</div>
 							</div>
 						</li>
@@ -111,8 +111,8 @@
 			<div class="container">
 				<h1 class="visually-hidden">Каталог</h1>
 				<ul class="breadcrumbs">
-					<li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-					<li class="breadcrumbs-item"><a href="#">Каталог</a></li>
+					<li class="breadcrumbs-item"><a href="index.html">Главная </a></li>
+					<li class="breadcrumbs-item"><a href="#"> Каталог </a></li>
 					<li class="breadcrumbs-current"><a>Сливочное</a></li>
 				</ul>
 				<h2>Сливочное мороженое</h2>
@@ -120,7 +120,7 @@
 					<h2 class="visually-hidden">Фильтры товаров</h2>
 					<form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
 						<fieldset class="form-item form-select">
-							<legend class="legend">Сортировка:</legend>
+							<legend class="legend legend-select">Сортировка:</legend>
 							<select class="form-row filters-select" name="sort">
 								<option value="popular">по популярности</option>
 								<option value="price-low">сначала недорогие</option>
@@ -130,8 +130,8 @@
 						</fieldset>
 						<div class="form-item filters-price">
 							<p class="price-controls">
-								<label class="min-price">Цена: <input name="min-price" type="text" value="100"> руб.</label>
-            					<label class="max-price">- <input name="max-price" type="text" value="500"> руб.</label>
+								<label class="min-price">Цена: <input name="min-price" type="text" value="100">руб.</label>
+            					<label class="max-price">- <input name="max-price" type="text" value="500">руб.</label>
             				</p>
 							<div  class="range-row">
 								<div class="range-controls">
@@ -144,12 +144,12 @@
 							</div>
 						</div>
 						<fieldset class="form-item">
-							<legend class="legend">Жирность:</legend>
-							<p  class="form-row">
+							<legend class="legend legend-fat">Жирность:</legend>
+							<p  class="form-row row-fat">
 								<input class="visually-hidden filters-input-radio" type="radio" name="fat" value="0" id="0">
 								<label class="filters-label-radio" for="0">0%</label>
 								<input class="visually-hidden filters-input-radio" type="radio" name="fat" value="10" id="10" checked>
-								<label class="filters-label-radio" for="10">10%</label>
+								<label class="filters-label-radio" for="10">до 10%</label>
 								<input class="visually-hidden filters-input-radio" type="radio" name="fat" value="30" id="30">
 								<label class="filters-label-radio" for="30">до 30%</label>
 								<input class="visually-hidden filters-input-radio" type="radio" name="fat" value="<30" id="<30">
@@ -157,8 +157,8 @@
 							</p>
 						</fieldset>
 						<fieldset class="form-item">
-							<legend class="legend">Наполнители:</legend>
-							<p  class="form-row">
+							<legend class="legend legend-topping">Наполнители:</legend>
+							<p  class="form-row row-topping">
 								<input class="visually-hidden filters-input-checkbox" type="checkbox" name="chocolate" id="chocolate">
 								<label class="filters-label-checkbox" for="chocolate">шоколадные</label>
 								<input class="visually-hidden filters-input-checkbox" type="checkbox" name="sugar" id="sugar">
@@ -241,7 +241,7 @@
 							<b class="catalog-item-price">325₽<small>/кг</small></b>
 							<p class="catalog-item-description">
 								<a href="#">
-									Сливочное с брусничным джемом
+									Сливочное с брусничным<br>джемом
 								</a>
 							</p>
 							<a class="button catalog-button" href="#">Быстрый просмотр</a>
@@ -297,7 +297,7 @@
 							<b class="catalog-item-price">440₽<small>/кг</small></b>
 							<p class="catalog-item-description">
 								<a href="#">
-									Сливочно-ванильное с кусочками шоколада
+									Сливочно-ванильное с<br>кусочками шоколада
 								</a>
 							</p>
 							<a class="button catalog-button" href="#">Быстрый просмотр</a>
@@ -311,7 +311,7 @@
 							<b class="catalog-item-price">435₽<small>/кг</small></b>
 							<p class="catalog-item-description">
 								<a href="#">
-									Сливочное с ментоловым сиропом
+									Сливочное с ментоловым<br>сиропом
 								</a>
 							</p>
 							<a class="button catalog-button" href="#">Быстрый просмотр</a>
@@ -371,10 +371,10 @@
 				</ul>
 				<div class="documentation">
 					<ul class="documentation-list">
-						<li><a href="#">Для поставщиков</a></li>
-						<li><a href="#">О производстве</a></li>
-						<li><a href="#">Наши документы</a></li>
-						<li><a href="#">Экологические стандарты</a></li>
+						<li class="documentation-item"><a href="#">Для поставщиков</a></li>
+						<li class="documentation-item"><a href="#">Наши документы</a></li>
+						<li class="documentation-item"><a href="#">О производстве</a></li>
+						<li class="documentation-item"><a href="#">Экологические стандарты</a></li>
 					</ul>
 				</div>
 				<div class="copyright">
