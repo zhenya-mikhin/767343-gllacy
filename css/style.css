@@ -407,7 +407,7 @@ a {
 }
 .search-form {
 	position: absolute;
-	top: 37px;
+	top: 36px;
 	right: 0;
 	z-index: 1;
 	
@@ -450,8 +450,8 @@ a {
 }
 .search-label {
 	position: absolute;
-	top: 10px;
-	left: 20px;
+	top: 9px;
+	left: 16px;
 }
 .enter-link {
 	position: relative;
@@ -559,7 +559,7 @@ a {
 		-ms-flex-align: center;
 			align-items: center;
 }
-.form-block .form-row {
+.form-block .enter-row {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2054,8 +2054,8 @@ a {
 @-webkit-keyframes shake {
 	0%,
 	100% {
-		-webkit-transform: translateX(0);
-				transform: translateX(0);
+		-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
 	}
 
 	10%,
@@ -2063,23 +2063,23 @@ a {
 	50%,
 	70%,
 	90% {
-		-webkit-transform: translateX(-10px);
-				transform: translateX(-10px);
+		-webkit-transform: translate(-60%, -50%);
+				transform: translate(-60%, -50%;
 	}
 
 	20%,
 	40%,
 	60%,
 	80% {
-		-webkit-transform: translateX(10px);
-				transform: translateX(10px);
+		-webkit-transform: translate(-40%, -50%);
+				transform: translate(-40%, -50%);
 	}
 }
 @keyframes shake {
 	0%,
 	100% {
-		-webkit-transform: translateX(0);
-				 transform: translateX(0);
+		-webkit-transform: translate(-50%, -50%);
+				 transform: translate(-50%, -50%);
 	}
 
 	10%,
@@ -2087,16 +2087,16 @@ a {
 	50%,
 	70%,
 	90% {
-		-webkit-transform: translateX(-10px);
-				transform: translateX(-10px);
+		-webkit-transform: translate(-60%, -50%);
+				transform: translate(-60%, -50%);
 	}
 
 	20%,
 	40%,
 	60%,
 	80% {
-		-webkit-transform: translateX(10px);
-				transform: translateX(10px);
+		-webkit-transform: translate(-40%, -50%);
+				transform: translate(-40%, -50%);
 	}
 }
 .modal-show {
